@@ -238,15 +238,85 @@
             </table>
 
             <div class="modal-footer">
-              <a href="#" class="btn btn-warning" data-bs-target="employee-edit" data-bs-toggle="modal">Edit Details</a>
+              <a href="#" class="btn btn-warning" data-bs-target="#employee-edit" data-bs-toggle="modal">Edit Details</a>
               <a href="#" class="btn btn-danger" data-bs-dismiss="modal" aria-label="close">close</a>
             </div>
-
           </div>
         </div>
       </div>
     </div>
     <!-- Details Employee modal -->
+
+    <!-- edit employee modal -->
+    <div class="modal fade" id="employee-edit" tabindex="-1" aria-hidden="true" data-bs-backdrop="static" style="backdrop-filter: blur(5px)">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header text-bg-dark">
+            <h5 class="modal-title">Edit Employee Details</h5>
+            <button type="button" class="btn-close btn-close-white" aria-label="close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="container">
+                <div class="row gx-3">
+                  <div class="col-md-12">
+                    <div class="mb-3">
+                      <input type="date" class="form-control form-control-sm" value="2024-07-25" required />
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="mb-3">
+                      <input type="text" class="form-control form-control-sm" placeholder="First Name" value="dimas" required />
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="mb-3">
+                      <input type="text" class="form-control form-control-sm" placeholder="Last Name" value="hibatullah" required />
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="mb-3">
+                      <input type="email" class="form-control form-control-sm" placeholder="Email" value="dimas@gmail.com" required />
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="mb-3">
+                      <input type="tel" class="form-control form-control-sm" placeholder="Phone" value="08121321" required />
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="mb-3">
+                      <select class="form-select" aria-label="job Assigned">
+                        <option>select for job employee</option>
+                        <option value="web designer">web designer</option>
+                        <option selected value="web developer">web developer</option>
+                        <option value="frontend developer">frontend developer</option>
+                        <option value="backend developer">backend developer</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-md-10">
+                    <div class="mb-3">
+                      <div class="d-grid">
+                        <button type="submit" class="btn btn-success">Update Employee</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-2">
+                    <div class="mb-3">
+                      <div class="d-grid">
+                        <button type="submit" class="btn btn-warning" data-bs-dismiss="modal" aria-label="close">close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- edit employee modal -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script>
